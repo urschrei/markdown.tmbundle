@@ -27,8 +27,8 @@ $n = max(@nums) + 1;
 $text =~ s/([\$\\`])/\\$1/g;
 
 # Insert the snippet.
-print '[^${2:' . $n . '}]$0'.
-       $text . "\n" . '[^$2]: ${3:Footnote text}  ' . "\n";</string>
+print '[^${1:' . $n . '}]$0'.
+     $text . "\n" . '[^$1]: ${2:Footnote text}  ' . "\n\n";</string>
 				<key>fallbackInput</key>
 				<string>none</string>
 				<key>input</key>
