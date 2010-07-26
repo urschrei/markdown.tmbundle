@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>moveToEndOfDocumentAndModifySelection:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>beforeRunningCommand</key>
+				<string>nop</string>
+				<key>command</key>
+				<string>#!/usr/bin/perl
+use List::Util qw(max);
+
+$text = $ENV{'TM_SELECTED_TEXT'};
+
+# Get the highest-numbered reference.
+@nums = $text =~ /^\[\^(\d+)\]: /mg;
+$n = max(@nums) + 1;
+
+# Escape special characters.
+$text =~ s/([\$\\`])/\\$1/g;
+
+# Insert the snippet.
+print '[^${2:' . $n . '}]$0'.
+       $text . "\n" . '[^$2]: ${3:Footnote text}  ' . "\n";</string>
+				<key>fallbackInput</key>
+				<string>none</string>
+				<key>input</key>
+				<string>selection</string>
+				<key>name</key>
+				<string>Footnote Command</string>
+				<key>output</key>
+				<string>insertAsSnippet</string>
+				<key>scope</key>
+				<string>text.html.markdown</string>
+				<key>uuid</key>
+				<string>FD423A2A-D7EE-4656-9EF8-5A07C66C1334</string>
+			</dict>
+			<key>command</key>
+			<string>executeCommandWithOptions:</string>
+		</dict>
+	</array>
+	<key>keyEquivalent</key>
+	<string>~@f</string>
+	<key>name</key>
+	<string>Insert Footnote</string>
+	<key>scope</key>
+	<string>text.html.markdown</string>
+	<key>uuid</key>
+	<string>78EB66DE-E461-4FBB-B05A-81A134D94512</string>
+</dict>
+</plist>
