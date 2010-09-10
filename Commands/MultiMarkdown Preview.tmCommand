@@ -8,7 +8,8 @@
 	<string>D99E8C0C-792F-11D9-A212-000D93B3A10E</string>
 	<key>command</key>
 	<string># Process the MultiMarkdown document and display as a web page
-
+. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+html_header "Multimarkdown Preview" "${TM_FILENAME:-}"
 
 # This really should go after xml declaration, but
 # TM seems ok with it
@@ -20,15 +21,30 @@ fi
 
 cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
 cd bin
-./mmd2XHTML.pl</string>
+./mmd2XHTML.pl | "${TM_SMARTYPANTS:-SmartyPants.pl}"|${TM_RUBY:-ruby} -e '
+lines = STDIN.read.split("\n")
+n = [ENV["TM_LINE_NUMBER"].to_i, lines.length].min - 7
+
+while n &gt; 0 &amp;&amp; !lines[n].match(/&lt;(h\d|p|ul|li|blockquote|pre|div|img|code|table|tr)&gt;/i)
+  n -= 1
+end
+
+if n &gt; 0 &amp;&amp; m = lines[n].match(/&lt;(h\d|p|ul|li|blockquote|pre|div|img|code|table|tr)&gt;(.*)$/i)
+  lines[n] = "&lt;#{m[1]} id=\"scroll_to_here\" &gt;#{m[2]}"
+end
+
+puts lines.join("\n")
+puts "\n&lt;script&gt;window.location.hash = \"scroll_to_here\";&lt;/script&gt;"
+'
+html_footer</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
-	<string>selection</string>
+	<string>document</string>
 	<key>keyEquivalent</key>
 	<string>^~@p</string>
 	<key>name</key>
-	<string>Preview</string>
+	<string>Preview Multimarkdown</string>
 	<key>output</key>
 	<string>showAsHTML</string>
 	<key>scope</key>
