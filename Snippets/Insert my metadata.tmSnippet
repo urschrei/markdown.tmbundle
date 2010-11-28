@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Title:	${1:Title}  
+Subtitle:	${2:Subtitle}  
+Author:	$TM_FULLNAME  
+Email:	${3:email address}
+Date:	${4:`date "+%B %d, %Y"`}  
+Bibtex:	${5:Bibtex file}  
+LaTeX XSLT:	memoir-xelatex.xslt  
+Chapter style:	lyhne  
+Page style:	simple  
+Format:	complete  
+Keywords:		$6  
+
+
+$0</string>
+	<key>keyEquivalent</key>
+	<string>~@m</string>
+	<key>name</key>
+	<string>Insert my metadata</string>
+	<key>scope</key>
+	<string>text.html.markdown</string>
+	<key>tabTrigger</key>
+	<string>meta</string>
+	<key>uuid</key>
+	<string>52083B51-89F0-454F-927D-DEF915D9C22F</string>
+</dict>
+</plist>

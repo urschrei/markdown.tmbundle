@@ -9,6 +9,7 @@
 NAME="${TM_FILENAME:-untitled}"
 BASENAME="${NAME%.*}"
 DST="/tmp/TextMate/$BASENAME"
+TM_DATE="$(date +"%d-%m-%Y")"
 
 if [ ! -d /tmp/TextMate ]; then
 mkdir /tmp/TextMate
