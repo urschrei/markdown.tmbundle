@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>[${1:page number/chapter/scene}][#${2:Author}:${3:year+identifier}] $4
+</string>
+	<key>name</key>
+	<string>Insert citation</string>
+	<key>scope</key>
+	<string>text.html.markdown</string>
+	<key>tabTrigger</key>
+	<string>cite</string>
+	<key>uuid</key>
+	<string>7F215631-DA54-4C7E-AEEC-7F68C6BF486A</string>
+</dict>
+</plist>
