@@ -5,12 +5,9 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string># Process the MultiMarkdown document using the univeral approach
-# This defaults to memoir
+	<string># Process the MultiMarkdown document into LaTeX
 
-cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
-cd bin
-./mmd2LaTeX.pl</string>
+multimarkdown -t latex</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>

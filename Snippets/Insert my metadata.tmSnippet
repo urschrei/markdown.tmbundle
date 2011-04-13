@@ -16,9 +16,8 @@ Format:	complete
 Keywords:		$6  
 
 
-$0</string>
-	<key>keyEquivalent</key>
-	<string>~@m</string>
+$0
+</string>
 	<key>name</key>
 	<string>Insert my metadata</string>
 	<key>scope</key>
@@ -26,6 +25,6 @@ $0</string>
 	<key>tabTrigger</key>
 	<string>meta</string>
 	<key>uuid</key>
-	<string>52083B51-89F0-454F-927D-DEF915D9C22F</string>
+	<string>69EAA6C3-DB8A-4A4D-965F-715E02960BA6</string>
 </dict>
 </plist>

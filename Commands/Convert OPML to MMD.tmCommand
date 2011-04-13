@@ -5,25 +5,28 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string># Process the MultiMarkdown document and display as XHTML source
+	<string># Requires MultiMarkdown-Support be installed
 
 cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
-cd bin
-./addmetadata.pl "format: snippet" | ./mmd2XHTML.pl
+cd XSLT
+
+
+xsltproc -nonet -novalid opml2mmd.xslt -
+
 </string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>^H</string>
+	<string>^O</string>
 	<key>name</key>
-	<string>Convert Document / Selection to HTML(snippet)</string>
+	<string>Convert OPML to MMD</string>
 	<key>output</key>
 	<string>openAsNewDocument</string>
 	<key>scope</key>
-	<string>text.html.markdown.multimarkdown</string>
+	<string>text.xml</string>
 	<key>uuid</key>
-	<string>401A3DB4-7032-4046-A2B6-6021C20F4DE5</string>
+	<string>9BF17F3B-B5E1-4F8A-A422-1A5413D4AD75</string>
 </dict>
 </plist>

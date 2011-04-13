@@ -5,26 +5,36 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string># Process the MultiMarkdown document and open in browser
+	<string># Process the MultiMarkdown document into LaTeX, and then
+# Process the LaTeX into a PDF
 
-TEMPFILE=`/usr/bin/mktemp -t TextMate.html | sed 's/\.[^.]*$//'` || exit 1
+# Requires that the document be saved first
+
+# This may or may not work for your file, and is not "officially"
+# supported.
+
+# Use at your own risk
 
 
-multimarkdown &gt;  $TEMPFILE
-open $TEMPFILE</string>
+cd "${TM_FILEPATH%/*}"
+
+mmd2pdf "${TM_FILEPATH}"
+
+open sample.pdf
+</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
-	<string>selection</string>
+	<string>document</string>
 	<key>keyEquivalent</key>
-	<string>^@p</string>
+	<string>^P</string>
 	<key>name</key>
-	<string>Generate Output and Open in Browser</string>
+	<string>Convert Document to PDF</string>
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
 	<string>text.html.markdown.multimarkdown</string>
 	<key>uuid</key>
-	<string>351451DE-C1A4-4A36-A563-99AF761D026B</string>
+	<string>4F20AFC6-53B0-4789-8007-8FC84F2B1874</string>
 </dict>
 </plist>

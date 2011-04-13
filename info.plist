@@ -18,6 +18,11 @@
 		<string>485F0ABF-7A7D-4432-8AB6-702414D6ADBD</string>
 		<string>4AB16529-60A5-4CE7-8E97-B0785CAF87C4</string>
 		<string>3BAE5ECF-9006-43D0-9AEB-28FAFE526840</string>
+		<string>401A3DB4-7032-4046-A2B6-6021C20F4DE5</string>
+		<string>DB5085DA-3E95-4020-8521-C9702168F160</string>
+		<string>E57A1B41-D70E-44C9-9512-45026C0A32F2</string>
+		<string>F05719F8-89F2-48F0-88F6-8CFAEEF5BA91</string>
+		<string>D9118E94-4E23-4B75-88D7-6BFEBAA70D1B</string>
 	</array>
 	<key>description</key>
 	<string>&lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt; allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML. This bundle provides preview functionality, syntax highlighting, and several useful commands.  Improved support for &lt;a href="http://fletcherpenney.net/multimarkdown/"&gt;MultiMarkdown&lt;/a&gt; has been added.</string>
@@ -28,6 +33,7 @@
 			<string>B52DEA16-8480-11D9-BE59-000D93B3A10E</string>
 			<string>966B0E57-799A-4B91-84B4-75695A78F7B8</string>
 			<string>FE31CF79-5F04-4FB6-B5CE-70BC781FF8B5</string>
+			<string>C70F0881-D108-47B1-A06F-09C74954E5C2</string>
 			<string>------------------------------------</string>
 			<string>49B1C71D-A748-4F99-9503-95444E8FF7BE</string>
 			<string>B8AD0BAA-18C9-4BBA-8217-E915544812E6</string>
@@ -40,6 +46,7 @@
 			<string>350477DF-B66B-49E8-8A31-CF26C2AD745D</string>
 			<string>------------------------------------</string>
 			<string>4405912F-4AD5-40F8-93B3-A63394036ACA</string>
+			<string>CAC8BE7C-78DD-489B-97F8-2EF8D896F91C</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -74,16 +81,11 @@
 					<string>351451DE-C1A4-4A36-A563-99AF761D026B</string>
 					<string>------------------------------------</string>
 					<string>9F73CBC1-E9C0-41A4-891F-B2879A1852F7</string>
-					<string>401A3DB4-7032-4046-A2B6-6021C20F4DE5</string>
 					<string>67EB96A4-4213-42C9-9C47-B886A4B8AC93</string>
-					<string>DB5085DA-3E95-4020-8521-C9702168F160</string>
-					<string>E57A1B41-D70E-44C9-9512-45026C0A32F2</string>
-					<string>F05719F8-89F2-48F0-88F6-8CFAEEF5BA91</string>
-					<string>D9118E94-4E23-4B75-88D7-6BFEBAA70D1B</string>
-					<string>2E520800-167A-4D3F-99F1-750EBEFCF8BA</string>
-					<string>14199AC7-CF55-404F-B035-A0F88E7F6141</string>
+					<string>C92636B7-8795-4CE4-8F0B-0F2EB200CAA1</string>
+					<string>FD6FBB48-68DF-4EFB-9A66-2C109E9FCA7E</string>
+					<string>9BF17F3B-B5E1-4F8A-A422-1A5413D4AD75</string>
 					<string>------------------------------------</string>
-					<string>8227967C-0CBB-4C8F-A3CB-761C0D5840C2</string>
 				</array>
 				<key>name</key>
 				<string>MultiMarkdown</string>
@@ -119,7 +121,6 @@
 					<string>------------------------------------</string>
 					<string>317FF73B-9CCC-486D-827F-839F4C7EE855</string>
 					<string>69DBCB2D-ECFA-4515-A479-F96AE19FE25A</string>
-					<string>0F87462E-1356-41DC-8664-59D1CD3E2052</string>
 					<string>45736A34-CE6F-4F03-93F5-EB6F348A4AF8</string>
 					<string>8557FE6C-388E-4E3A-A725-94B3A505CCD8</string>
 				</array>
@@ -165,14 +166,11 @@
 		<string>F3A754C3-CE6B-11D9-9C17-000A95C0F626</string>
 		<string>724FCFF6-CE6B-11D9-9C17-000A95C0F626</string>
 		<string>9F73CBC1-E9C0-41A4-891F-B2879A1852F7</string>
-		<string>401A3DB4-7032-4046-A2B6-6021C20F4DE5</string>
 		<string>67EB96A4-4213-42C9-9C47-B886A4B8AC93</string>
-		<string>DB5085DA-3E95-4020-8521-C9702168F160</string>
-		<string>E57A1B41-D70E-44C9-9512-45026C0A32F2</string>
-		<string>F05719F8-89F2-48F0-88F6-8CFAEEF5BA91</string>
-		<string>D9118E94-4E23-4B75-88D7-6BFEBAA70D1B</string>
-		<string>14199AC7-CF55-404F-B035-A0F88E7F6141</string>
-		<string>2E520800-167A-4D3F-99F1-750EBEFCF8BA</string>
+		<string>C92636B7-8795-4CE4-8F0B-0F2EB200CAA1</string>
+		<string>FD6FBB48-68DF-4EFB-9A66-2C109E9FCA7E</string>
+		<string>4F20AFC6-53B0-4789-8007-8FC84F2B1874</string>
+		<string>9BF17F3B-B5E1-4F8A-A422-1A5413D4AD75</string>
 		<string>351451DE-C1A4-4A36-A563-99AF761D026B</string>
 		<string>CAC8BE7C-78DD-489B-97F8-2EF8D896F91C</string>
 		<string>7CCF064C-BC8F-437B-A339-0E2156D8B2C3</string>
@@ -210,7 +208,6 @@
 		<string>DA18D8BE-792F-11D9-A212-000D93B3A10E</string>
 		<string>4405912F-4AD5-40F8-93B3-A63394036ACA</string>
 		<string>8D04C38E-0187-4E53-B100-AE096CBBB984</string>
-		<string>52083B51-89F0-454F-927D-DEF915D9C22F</string>
 		<string>C96D5804-7FA5-4CFE-8ADC-6F2F53B0FF01</string>
 		<string>0A1D9874-B448-11D9-BD50-000D93B6E43C</string>
 		<string>F5E04BF4-69A9-45AE-9205-B3F3C2B00130</string>
@@ -223,9 +220,10 @@
 		<string>4A05D483-795D-4B71-8537-3417B8450AD8</string>
 		<string>48600DF2-8E98-40C0-9FBD-D9B50EE73633</string>
 		<string>7A27A176-318B-403F-9228-D40B55CC6E85</string>
-		<string>78EB66DE-E461-4FBB-B05A-81A134D94512</string>
-		<string>7698188A-E697-4A64-B538-648F17558613</string>
-		<string>0B437976-C63F-4A2A-B41B-0383D095B602</string>
+		<string>C70F0881-D108-47B1-A06F-09C74954E5C2</string>
+		<string>7F215631-DA54-4C7E-AEEC-7F68C6BF486A</string>
+		<string>F1217D2C-7D7B-46AC-B26F-A1F54B51F4CF</string>
+		<string>69EAA6C3-DB8A-4A4D-965F-715E02960BA6</string>
 	</array>
 	<key>uuid</key>
 	<string>D99E8C0C-792F-11D9-A212-000D93B3A10E</string>

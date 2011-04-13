@@ -8,6 +8,7 @@
 		<string>markdown</string>
 		<string>mdown</string>
 		<string>markdn</string>
+		<string>mmd</string>
 	</array>
 	<key>firstLineMatch</key>
 	<string>^\S.*?:\s*\S.*?\s*$</string>

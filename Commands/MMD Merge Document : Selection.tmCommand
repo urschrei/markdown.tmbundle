@@ -9,6 +9,8 @@
 
 # The document must be saved first, in order for the script to find the referenced documents
 
+# Requires that MultiMarkdown-Support be installed
+
 cd "${TM_FILEPATH%/*}"
 
 "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}/Utilities/mmd_merge.pl"

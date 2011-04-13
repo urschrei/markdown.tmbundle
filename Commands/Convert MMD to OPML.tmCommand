@@ -4,34 +4,22 @@
 <dict>
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
-	<key>bundleUUID</key>
-	<string>D99E8C0C-792F-11D9-A212-000D93B3A10E</string>
 	<key>command</key>
-	<string># Process the MultiMarkdown document and display as a web page
-
-
-# This really should go after xml declaration, but
-# TM seems ok with it
-
-if [[ -f "$TM_FILEPATH" ]]; then
-  echo "&lt;base href='tm-file://${TM_FILEPATH// /%20}'&gt;"
-fi
-
-
-multimarkdown</string>
+	<string>multimarkdown -t opml
+</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>^~@p</string>
+	<string>^O</string>
 	<key>name</key>
-	<string>Preview</string>
+	<string>Convert Document / Selection to OPML</string>
 	<key>output</key>
-	<string>showAsHTML</string>
+	<string>openAsNewDocument</string>
 	<key>scope</key>
 	<string>text.html.markdown.multimarkdown</string>
 	<key>uuid</key>
-	<string>7CCF064C-BC8F-437B-A339-0E2156D8B2C3</string>
+	<string>FD6FBB48-68DF-4EFB-9A66-2C109E9FCA7E</string>
 </dict>
 </plist>
