@@ -19,7 +19,7 @@
 outfile="${TM_FILENAME%.*}"
 cd "${TM_FILEPATH%/*}"
 
-/users/sth/dev/mmd3_proc/mmd3_proc.py "${TM_FILENAME}"
+mmd3_proc.py "${TM_FILENAME}"
 
 open "$outfile.pdf"
 </string>
