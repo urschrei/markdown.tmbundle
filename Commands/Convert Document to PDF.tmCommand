@@ -14,13 +14,14 @@
 # supported.
 
 # Use at your own risk
+# "$TM_SUPPORT_PATH/lib/mmd3_proc.py"
 
-
+outfile="${TM_FILENAME%.*}"
 cd "${TM_FILEPATH%/*}"
 
-mmd2pdf "${TM_FILEPATH}"
+/users/sth/dev/mmd3_proc/mmd3_proc.py "${TM_FILENAME}"
 
-open sample.pdf
+open "$outfile.pdf"
 </string>
 	<key>fallbackInput</key>
 	<string>document</string>
@@ -31,7 +32,7 @@ open sample.pdf
 	<key>name</key>
 	<string>Convert Document to PDF</string>
 	<key>output</key>
-	<string>discard</string>
+	<string>showAsHTML</string>
 	<key>scope</key>
 	<string>text.html.markdown.multimarkdown</string>
 	<key>uuid</key>
