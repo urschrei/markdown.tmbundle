@@ -5,7 +5,8 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string># Process the LaTeX into a PDF
+	<string># Process the MultiMarkdown document into LaTeX, and then
+# Process the LaTeX into a PDF
 
 # Requires that the document be saved first
 
@@ -13,13 +14,14 @@
 # supported.
 
 # Use at your own risk
+# "$TM_SUPPORT_PATH/lib/mmd3_proc.py"
 
-
+outfile="${TM_FILENAME%.*}"
 cd "${TM_FILEPATH%/*}"
 
-mmd2pdf "${TM_FILEPATH}"
+mmd3_proc.py "${TM_FILENAME}"
 
-open sample.pdf
+open "$outfile.pdf"
 </string>
 	<key>fallbackInput</key>
 	<string>document</string>
@@ -28,12 +30,12 @@ open sample.pdf
 	<key>keyEquivalent</key>
 	<string>^P</string>
 	<key>name</key>
-	<string>Convert Document to PDF</string>
+	<string>Convert Document to PDF (XeLaTeX)</string>
 	<key>output</key>
 	<string>showAsHTML</string>
 	<key>scope</key>
 	<string>text.html.markdown.multimarkdown</string>
 	<key>uuid</key>
-	<string>4F20AFC6-53B0-4789-8007-8FC84F2B1874</string>
+	<string>9E5677A2-74B6-4613-B918-BA8B12C3CA4E</string>
 </dict>
 </plist>

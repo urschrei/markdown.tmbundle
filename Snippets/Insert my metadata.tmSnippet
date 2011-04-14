@@ -3,23 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Title:	${1:Title}  
+	<string>LaTeX Input:    mmd-memoir-header  
+Title:	${1:Title}  
 Subtitle:	${2:Subtitle}  
 Author:	$TM_FULLNAME  
 Email:	${3:email address}
 Date:	${4:`date "+%B %d, %Y"`}  
-Bibtex:	${5:Bibtex file}  
-LaTeX XSLT:	memoir-xelatex.xslt  
-Chapter style:	lyhne  
-Page style:	simple  
-Format:	complete  
+Bibtex:	${5:Bibtex file}   
+Mychapterstyle:	lyhne  
+Mypagestyle:	simple  
+LaTeX Mode:     memoir  
+LaTeX Input:    mmd-memoir-begin-doc  
+LaTeX Footer:   mmd-memoir-footer  
 Keywords:		$6  
 
 
 $0
 </string>
 	<key>name</key>
-	<string>Insert my metadata</string>
+	<string>Insert my Memoir metadata</string>
 	<key>scope</key>
 	<string>text.html.markdown</string>
 	<key>tabTrigger</key>
